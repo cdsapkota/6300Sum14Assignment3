@@ -1,0 +1,36 @@
+README file for AndroidApp
+	This application is a converter that converts miles to kilometers, celsius to fahrenheit 
+	and pounds to kilograms and vice-versa. This is a simple application that is created for cell phones 
+	that use android operating system.
+
+The files contained here:
+
+AndroidManifest.xml
+	This XML file describes to the Android platform what the application can do. It is a required 
+	file, and is the mechanism we use to show your application to the user (in the app launcher's list), 
+	handle data types, etc.
+
+src/*
+	Under this directory is the Java source for for the application.
+
+src/edu/gatech/unitconverter/MainActivity.java
+	The MainActivity class access the other three classes i.e. DistanceActivity.java, TemperatureActivity.java 
+	and WeightActivity.java. This class calls the other classes and they implement the main features of the application.
+
+res/layout/activity_main.xml
+	The res/layout/ directory contains XML files describing user interface view hierarchies.
+	The activity_main.xml file here is used by MainActivity.java to construct its UI.  The base name of 
+	each file (all text before a '.' character) is taken as the resource name; it must be lower-case. There are 
+	other XML files that describe additional resources included in the application. They all use the same 
+	syntax; all of these resources could be defined in one file, but we generally split them apart to 
+	keep things organized.
+
+How to use the app:
+	Load the app, then enter a value in the section that says, ÒPlease enter the value:Ó
+	After entering the value that you desire to convert, click on one of the six options provided.
+		Miles: Converts from kilometers to Miles.
+		Kilometers: Converts from miles to kilometers.
+		Celsius: Converts from fahrenheit to celsius. 
+		Fahrenheit: Converts from celsius to fahrenheit.
+		Pounds: Converts from kilograms to pounds.
+		Kilograms: Converts from pounds to kilograms.
